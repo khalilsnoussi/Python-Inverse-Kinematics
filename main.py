@@ -67,8 +67,8 @@ def rgb(red, green, blue):
 class setting:
 
     regularChain = True 
-    chainLength = 20 # Number of joints	
-    jointLength = 60 # Length of each joint
+    chainLength = 3 # Number of joints	
+    jointLength = 300 # Length of each joint
     showJointCounter = True
 
     showVectors = False
@@ -316,12 +316,12 @@ while True:
         while keyboard.is_pressed('&'):
             sleep(0.1)
 
-    if keyboard.is_pressed('é'):
+    if keyboard.is_pressed('t'):
         if not(setting.showTarget):
             setting.showTarget = True
         else:
             setting.showTarget = False
-        while keyboard.is_pressed('é'):
+        while keyboard.is_pressed('t'):
             sleep(0.1)
 
     if keyboard.is_pressed('"'):
